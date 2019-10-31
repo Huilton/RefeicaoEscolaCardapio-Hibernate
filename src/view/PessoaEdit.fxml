@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="390.0" prefWidth="479.0" stylesheets="@../styleCss/pessoaedit.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PessoaEditController">
+    
+    <children>
+        <TableView fx:id="tblPessoa" layoutX="8.0" layoutY="239.0" onMouseClicked="#handleTblPessoaClicked" prefHeight="147.0" prefWidth="468.0">
+            <columns>
+                <TableColumn fx:id="tcIdPessoa" prefWidth="75.0" text="ID Pessoa" />
+                <TableColumn fx:id="tcNome" prefWidth="86.0" text="Nome" />
+                <TableColumn fx:id="tcTelefone" prefWidth="89.0" text="Telfone" />
+                <TableColumn fx:id="tcEmail" prefWidth="218.0" text="Email" />
+            </columns>
+        </TableView>
+        <VBox layoutX="133.0" layoutY="41.0" prefHeight="117.0" prefWidth="305.0" spacing="8.0">
+            <children>
+                <TextField fx:id="txtCodigo" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="70.0" />
+                <TextField fx:id="txtNome" prefHeight="32.0" prefWidth="305.0" />
+                <TextField fx:id="txtTelefone" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="158.0" />
+                <TextField fx:id="txtEmail" minWidth="-Infinity" prefHeight="32.0" prefWidth="305.0" />
+            </children>
+        </VBox>
+        <VBox layoutX="33.0" layoutY="44.0" prefHeight="111.0" prefWidth="100.0" spacing="15.0">
+            <children>
+                <Label fx:id="lblCodigo" prefHeight="32.0" prefWidth="298.0" text="Código" />
+                <Label prefHeight="32.0" prefWidth="100.0" text="Nome" />
+                <Label prefHeight="32.0" prefWidth="100.0" text="Telefone" />
+                <Label prefHeight="32.0" prefWidth="100.0" text="Email" />
+            </children>
+        </VBox>
+      <HBox layoutX="68.0" layoutY="195.0" prefHeight="25.0" prefWidth="348.0">
+         <children>
+            <Button maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#handleBtnSalvar" prefHeight="25.0" prefWidth="80.0" styleClass="salvar" text="Salvar">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <HBox.margin>
+                  <Insets left="30.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="btnLimpar" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#handleBtnLimpar" prefHeight="25.0" prefWidth="80.0" styleClass="cancel" text="Limpar">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <HBox.margin>
+                  <Insets left="30.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="btnExcluir" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#handleBtnExcluir" prefHeight="25.0" prefWidth="80.0" styleClass="remover" text="Excluir">
+               <HBox.margin>
+                  <Insets left="30.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+    </children>
+</AnchorPane>

@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 21/12/2017 18:59:05 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="model.Instituicao" table="instituicao" catalog="dbrefeicao" optimistic-lock="version">
+        <id name="idInstituicao" type="java.lang.Integer">
+            <column name="id_instituicao" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="pessoa" class="model.Pessoa" fetch="join">
+            <column name="id_pessoa" />
+        </many-to-one>
+        <property name="nomeInst" type="string">
+            <column name="nome_inst" length="50" />
+        </property>
+        <property name="emailInst" type="string">
+            <column name="email_inst" length="100" />
+        </property>
+        <property name="telefoneInst" type="string">
+            <column name="telefone_inst" length="10" />
+        </property>
+        <set name="refeicaos" table="refeicao" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="id_instituicao" />
+            </key>
+            <one-to-many class="model.Refeicao" />
+        </set>
+    </class>
+</hibernate-mapping>

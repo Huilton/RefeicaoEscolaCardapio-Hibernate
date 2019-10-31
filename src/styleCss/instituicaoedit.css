@@ -1,0 +1,104 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.button.salvar{
+    -fx-font-family:"Arial";
+    -fx-padding: 5 5 5 30; /*--Tamanho do botão*/
+    -fx-font-size: 12px;  
+    -fx-background-color: #cccccc; 
+    -fx-background-image: url("../images/Salvar.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 5,0,0,0;
+    -fx-text-alignment: right;
+    -fx-background-radius: 50px;
+
+}
+.button.cancel{
+    -fx-font-family:"Arial";
+    -fx-padding: 5 5 5 30; /*--Tamanho do botão*/
+    -fx-font-size: 12px;  
+    -fx-background-color: #cccccc; 
+    -fx-background-image: url("../images/Clear.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 5,0,0,0;
+    -fx-text-alignment: right;
+    -fx-background-radius: 50px;
+}
+.button.remover{
+    -fx-font-family:"Arial";
+    -fx-padding: 5 5 5 30; /*--Tamanho do botão*/
+    -fx-font-size: 12px;  
+    -fx-background-color:#ff3300 ;
+    -fx-text-alignment: left;
+    -fx-background-image: url("../images/delete_branco.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 5,0,0,0;
+    -fx-background-radius: 50px;
+    -fx-text-fill: #ffffff;
+}
+.button.voltar{
+    -fx-font-family:"Arial";
+    -fx-padding: 5 5 5 30; /*--Tamanho do botão*/
+    -fx-font-size: 12px;  
+    -fx-background-color: #cccccc; 
+    -fx-background-image: url("../images/Voltar.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 5,0,0,0;
+    -fx-text-alignment: right;
+    -fx-background-radius: 50px;
+}
+.button.novo{
+    -fx-font-family:"Arial";
+    -fx-padding: 5 5 5 30; /*--Tamanho do botão*/
+    -fx-font-size: 12px;  
+    -fx-background-color: #cccccc; 
+    -fx-background-image: url("../images/Novo.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 5,0,0,0;
+    -fx-text-alignment: right;
+    -fx-background-radius: 50px; 
+}
+.label{
+    -fx-text-alignment: right;
+    -fx-font-size: 16px;
+    -fx-font-family: calibri corp;
+    -fx-alignment: TOP_RIGHT;
+    -fx-padding: 0 10 0 0;/*top rigth bottom left*/
+}
+.textField{
+    -fx-text-alignment: right;
+    -fx-font-size: 16px;
+    -fx-font-family: calibri corp;
+}
+.radioButton{
+    -fx-text-alignment: center;
+    -fx-font-size: 16px;
+    -fx-font-family: calibri corp;
+}
+.combo-box{
+    -fx-font-family:"Arial";
+    -fx-padding: 3 5 5 30; /*--Tamanho do botão*/
+    -fx-font-size: 12px;  
+    -fx-background-color: #cccccc; 
+    -fx-text-alignment: right;
+    -fx-background-radius: 50px;
+
+}
+.combo-box .list-cell {
+    
+    -fx-background-radius: 50px;
+    -fx-border-radius: 50px;
+    -fx-border-width: 0px;
+}
+.textField.telefone{
+    -fx-Pref-Width:90px;
+    -fx-Pre-Height:40px;
+}
+.VBox{
+    -fx-alignment: top-right;
+}
+.campo_invalido{
+    -fx-border-color:red;
+    -fx-border-width: 3px;
+}

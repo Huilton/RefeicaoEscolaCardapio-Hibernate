@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="507.0" prefWidth="758.0" stylesheets="@../styleCss/homeedit.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.HomeEditController">
+    <children>
+        <Accordion layoutX="6.0" layoutY="19.0" prefHeight="202.0" prefWidth="202.0">
+            <panes>
+                <TitledPane animated="false" prefHeight="164.0" prefWidth="202.0" text="Cadastros e manutenções">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="226.0" prefWidth="172.0">
+                            <children>
+                                <VBox prefHeight="226.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                    <children>
+                                      
+                                        <Button alignment="BOTTOM_LEFT" mnemonicParsing="false" onAction="#handleFotoCardapio" prefHeight="25.0" prefWidth="200.0" text="Refeição">
+                                            <VBox.margin>
+                                                <Insets bottom="5.0" />
+                                            </VBox.margin>
+                                        </Button>
+                                        <Button alignment="BOTTOM_LEFT" mnemonicParsing="false" onAction="#handleCadInstituicao" prefHeight="25.0" prefWidth="193.0" text="Instituicao">
+                                            <VBox.margin>
+                                                <Insets bottom="5.0" />
+                                            </VBox.margin>
+                                        </Button>
+                                        <Button alignment="BOTTOM_LEFT" mnemonicParsing="false" onAction="#handleCadPessoa" prefHeight="25.0" prefWidth="193.0" text="Pessoa">
+                                            <VBox.margin>
+                                                <Insets bottom="5.0" />
+                                            </VBox.margin>
+                                        </Button>
+                                        <!--                                        <Button alignment="BOTTOM_LEFT" mnemonicParsing="false" 
+                                                          onAction="#handleCadMenu" prefHeight="25.0" prefWidth="193.0" 
+                                                          text="Menu">
+                                            <VBox.margin>
+                                                <Insets bottom="5.0" />
+                                            </VBox.margin>
+                                        </Button>
+  <Button alignment="BOTTOM_LEFT" mnemonicParsing="false" onAction="#handleCadRefeicao" prefHeight="25.0" prefWidth="192.0" text="Refeição">
+                                            <VBox.margin>
+                                                <Insets bottom="5.0" />
+                                            </VBox.margin>
+                                        </Button>-->
+                                        <!--   <Button alignment="BOTTOM_LEFT" layoutX="10.0" layoutY="70.0" mnemonicParsing="false" onAction="#handleCadEmail" prefHeight="25.0" prefWidth="193.0" text="Email" />-->
+                                    </children>
+                                </VBox>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </TitledPane>
+                <!--<TitledPane animated="false" text="Cliente">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                                <VBox prefHeight="226.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                    <children>
+                                        <Button alignment="BOTTOM_LEFT" mnemonicParsing="false" onAction="#handleCadCliente" prefHeight="25.0" prefWidth="188.0" text="Cadastro">
+                                            <VBox.margin>
+                                                <Insets bottom="5.0" />
+                                            </VBox.margin>
+                                        </Button>
+                                    </children>
+                                </VBox>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </TitledPane>
+                <TitledPane animated="false" text="Venda">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="192.0" prefWidth="200.0">
+                            <children>
+                                <VBox prefHeight="226.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                    <children>
+                                        <Button alignment="BOTTOM_LEFT" mnemonicParsing="false" onAction="#handleCadVenda" prefHeight="25.0" prefWidth="188.0" text="Registro de Venda">
+                                            <VBox.margin>
+                                                <Insets bottom="5.0" />
+                                            </VBox.margin>
+                                        </Button>
+                                        <Button alignment="BOTTOM_LEFT" mnemonicParsing="false" onAction="#handleCadPagamento" prefHeight="25.0" prefWidth="188.0" text="Registro de Pagamento">
+                                            <VBox.margin>
+                                                <Insets bottom="5.0" />
+                                            </VBox.margin>
+                                        </Button>
+                                    </children>
+                                </VBox>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </TitledPane>-->
+                <TitledPane animated="false" prefHeight="250.0" prefWidth="307.0" text="Informações">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="96.0" prefWidth="200.0">
+                            <children>
+                                <VBox layoutX="19.6" layoutY="19.6" prefHeight="76.0" prefWidth="181.0" AnchorPane.bottomAnchor="165.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="9.0" AnchorPane.topAnchor="10.0">
+                                    <children>
+                                        <Button alignment="BOTTOM_LEFT" mnemonicParsing="false" onAction="#handleDiagrama" prefHeight="25.0" prefWidth="188.0" text="Diagrama de Classe">
+                                            <VBox.margin>
+                                                <Insets bottom="5.0" />
+                                            </VBox.margin>
+                                        </Button>
+                                        <Button alignment="BOTTOM_LEFT" mnemonicParsing="false" onAction="#handleScript" prefHeight="25.0" prefWidth="188.0" text="Script de Banco" />
+                                    </children>
+                                </VBox>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </TitledPane>
+            </panes>
+        </Accordion>
+    </children>
+</AnchorPane>

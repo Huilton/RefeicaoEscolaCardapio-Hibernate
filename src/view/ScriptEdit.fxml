@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="524.0" prefWidth="572.0"  stylesheets="@../styleCss/scriptedit.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ScriptEditController">
+    <children>
+        <TextArea fx:id="txScript" layoutX="14.0" layoutY="14.0" prefHeight="498.0" prefWidth="543.0" />
+    </children>
+</AnchorPane>

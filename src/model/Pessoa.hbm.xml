@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 21/12/2017 18:59:05 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="model.Pessoa" table="pessoa" catalog="dbrefeicao" optimistic-lock="version">
+        <id name="idPessoa" type="java.lang.Integer">
+            <column name="id_pessoa" />
+            <generator class="identity" />
+        </id>
+        <property name="nome" type="string">
+            <column name="nome" length="50" />
+        </property>
+        <property name="telefone" type="string">
+            <column name="telefone" length="10" />
+        </property>
+        <property name="email" type="string">
+            <column name="email" length="50" />
+        </property>
+        <set name="instituicaos" table="instituicao" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="id_pessoa" />
+            </key>
+            <one-to-many class="model.Instituicao" />
+        </set>
+    </class>
+</hibernate-mapping>

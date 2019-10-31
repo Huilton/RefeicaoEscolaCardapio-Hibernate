@@ -1,0 +1,13 @@
+ public static void gravarArquivosModelos(Dados dados) {
+        String raiz = System.getProperty("user.dir");
+        Path path = Paths.get(raiz, "ProvaQi.csv");
+
+        try {
+            Files.write(path, dados.toString().getBytes(), StandardOpenOption.CREATE,
+                    StandardOpenOption.APPEND,
+                    StandardOpenOption.WRITE);
+        } catch (IOException ex) {
+            JOptionPane.showMessageDialog(null, " ERRO AO REALIZAR CADASTRO!! ", "!! ERRO !!", JOptionPane.ERROR_MESSAGE);
+            ex.printStackTrace();
+        }
+    }

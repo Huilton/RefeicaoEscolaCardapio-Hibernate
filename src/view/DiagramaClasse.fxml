@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="174.0" prefWidth="295.0"  stylesheets="@../styleCss/diagramaClasse.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DiagramaController">
+    <children>
+        <BorderPane layoutX="48.0" layoutY="-13.0" prefHeight="187.0" prefWidth="295.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <center>
+                <ImageView fitHeight="500.0" fitWidth="900.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                    <image>
+                        <Image url="@../images/dbrefeicao_HUILTON_THIAGO.PNG" />
+                    </image>
+                </ImageView>
+            </center>
+        </BorderPane>
+    </children>
+</AnchorPane>

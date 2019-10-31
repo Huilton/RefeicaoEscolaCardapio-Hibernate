@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="495.0" prefWidth="689.0" stylesheets="@../styleCss/refeicaoedit.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RefeicaoEditController">
+   
+    <children>
+        <TableView fx:id="tblRefeicao" layoutX="11.0" layoutY="340.0" onMouseClicked="#handleTblRefeicaoClicked" prefHeight="158.0" prefWidth="667.0">
+            <columns>
+                <TableColumn fx:id="tcCodigo" prefWidth="71.0" text="Código" />
+                <TableColumn fx:id="tcNomeRefeicao" prefWidth="146.0" text="Refeição" />
+                <TableColumn fx:id="tcDataRefeicao" prefWidth="119.0" text="Data Refeição" />
+                <TableColumn fx:id="tcDescricao" prefWidth="223.0" text="Descrição" />
+                <TableColumn fx:id="tcTipoRef" prefWidth="178.0" text="Tipo Refeição" />
+            </columns>
+        </TableView>
+        <ImageView fx:id="imgFoto" fitHeight="178.0" fitWidth="244.0" layoutX="401.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true" />
+        <VBox fx:id="vBoxLabels" layoutX="46.0" layoutY="28.0" prefHeight="158.0" prefWidth="142.0" spacing="19.0">
+            <children>
+                <Label fx:id="lblCodigo" prefHeight="25.0" prefWidth="142.0" text="Codigo" />
+                <Label prefHeight="25.0" prefWidth="142.0" text="Nome Refeição" />
+                <Label prefHeight="25.0" prefWidth="142.0" text="Data" />
+                <Label prefHeight="33.0" prefWidth="142.0" text="Descrição" />
+                <Label prefHeight="25.0" prefWidth="145.0" text="Tipo de refeição">
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                    <padding>
+                        <Insets right="10.0" />
+                    </padding>
+                </Label>
+                <Label prefHeight="25.0" prefWidth="145.0" text="Instituição" />
+                <Label prefHeight="29.0" prefWidth="142.0" text="Buscar Foto" />
+            </children>
+        </VBox>
+        <VBox fx:id="vBoxTxts" layoutX="184.0" layoutY="28.0" prefHeight="253.0" prefWidth="202.0" spacing="10.0">
+            <children>
+                <TextField fx:id="txtCodigo" disable="true" prefHeight="25.0" prefWidth="124.0" />
+                <TextField fx:id="txtNomeRefeicao" prefHeight="25.0" prefWidth="168.0" />
+                <DatePicker fx:id="txtData" />
+                <TextField fx:id="txtDescricao" prefHeight="25.0" prefWidth="235.0" />
+                <ComboBox fx:id="cbxTipoRefeicao" prefHeight="9.0" prefWidth="182.0">
+                    <padding>
+                        <Insets left="50.0" />
+                    </padding>
+                </ComboBox>
+                <ComboBox fx:id="cbxInstituicao" prefHeight="9.0" prefWidth="182.0" promptText="Selecione..">
+                    <padding>
+                        <Insets left="50.0" />
+                    </padding>
+                </ComboBox>
+                <Button fx:id="btnFoto" mnemonicParsing="false" onAction="#handleFoto" prefHeight="25.0" prefWidth="88.0" styleClass="foto" text="Src..." />
+            </children>
+        </VBox>
+      <HBox layoutX="144.0" layoutY="287.0" prefHeight="25.0" prefWidth="348.0">
+         <children>
+            <Button maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#handleBtnSalvar" prefHeight="25.0" prefWidth="80.0" styleClass="salvar" text="Salvar">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <HBox.margin>
+                  <Insets left="30.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="btnLimpar" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#handleBtnLimpar" prefHeight="25.0" prefWidth="80.0" styleClass="cancel" text="Limpar">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <HBox.margin>
+                  <Insets left="30.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="btnExcluir" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#handleBtnExcluir" prefHeight="25.0" prefWidth="80.0" styleClass="remover" text="Excluir">
+               <HBox.margin>
+                  <Insets left="30.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+    </children>
+</AnchorPane>

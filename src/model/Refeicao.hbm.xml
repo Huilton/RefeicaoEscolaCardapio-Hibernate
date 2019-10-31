@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 21/12/2017 18:59:05 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="model.Refeicao" table="refeicao" catalog="dbrefeicao" optimistic-lock="version">
+        <id name="idRefeicao" type="java.lang.Integer">
+            <column name="id_refeicao" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="fotoCardapio" class="model.FotoCardapio" fetch="join">
+            <column name="id_foto_cardapio" />
+        </many-to-one>
+        <many-to-one name="instituicao" class="model.Instituicao" fetch="join">
+            <column name="id_instituicao" />
+        </many-to-one>
+        <property name="tipoRef" type="string">
+            <column name="tipo_ref" length="20" />
+        </property>
+        <property name="dataRef" type="timestamp">
+            <column name="data_ref" length="19" />
+        </property>
+        <property name="dataCadastro" type="timestamp">
+            <column name="data_cadastro" length="19" />
+        </property>
+        <property name="nomeRef" type="string">
+            <column name="nome_ref" length="100" />
+        </property>
+        <property name="descricao" type="string">
+            <column name="descricao" length="150" />
+        </property>
+    </class>
+</hibernate-mapping>

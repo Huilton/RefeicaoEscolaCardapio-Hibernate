@@ -1,0 +1,71 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.button.salvar{
+    -fx-font-family:"Arial";
+    -fx-padding: 5 5 5 30; /*--Tamanho do botão*/
+    -fx-font-size: 12px;  
+    -fx-background-color: #cccccc; 
+    -fx-background-image: url("../images/Salvar.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 5,0,0,0;
+    -fx-text-alignment: right;
+    -fx-border-color: #000;
+    -fx-border-radius: 5px;
+
+}
+.button.voltar{
+    -fx-font-family:"Arial";
+    -fx-padding: 5 5 5 30; /*--Tamanho do botão*/
+    -fx-font-size: 12px;  
+    -fx-background-color: #cccccc; 
+    -fx-background-image: url("../images/Voltar.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 5,0,0,0;
+    -fx-text-alignment: right;
+    -fx-border-color: #000;
+    -fx-border-radius: 5px;
+
+}
+.button.remover{
+    -fx-font-family:"Arial";
+    -fx-padding: 5 5 5 30; /*--Tamanho do botão*/
+    -fx-font-size: 12px;  
+    -fx-background-color:#ff3300 ;
+    -fx-text-alignment: left;
+    -fx-background-image: url("../images/Delete.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 5,0,0,0;
+    -fx-border-color: #000;
+    -fx-border-radius: 5px;
+
+
+}
+.button.consultar{
+    -fx-font-family:"Arial";
+    -fx-padding: 5 5 5 30; /*--Tamanho do botão*/
+    -fx-font-size: 12px;  
+    -fx-background-color: #cccccc;
+    -fx-background-image: url("../images/Pesquisar.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 5,0,0,0;
+    -fx-text-alignment: right;
+    -fx-border-color: #000;
+    -fx-border-radius: 5px;
+
+}
+
+.button.limpar{
+    -fx-font-family:"Arial";
+    -fx-padding: 5 5 5 30; /*--Tamanho do botão*/
+    -fx-font-size: 12px;  
+    -fx-background-color:#cccccc ;
+    -fx-background-image: url("../images/Clear.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 5,0,0,0;
+    -fx-text-alignment: left;
+    -fx-border-color: #000;
+    -fx-border-radius: 5px;
+}
+
